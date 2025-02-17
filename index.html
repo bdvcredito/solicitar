@@ -18,6 +18,28 @@
       <script async="" src="js/clarity.js"></script><script async="" src="js/4047542"></script><script id="pushnews-js" async="" src="js/ilabspush.min.js"></script><script type="text/javascript" async="" src="imagens/js"></script><script type="text/javascript" async="" src="imagens/analytics.js"></script><script type="text/javascript" async="" src="imagens/js(1)"></script><script src="js/bat.js" async=""></script><script src="js/pushnews-launcher.js" async=""></script>
       <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16881424420"></script>
+
+<!-- Event snippet for Visualização de página conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-16881424420/G2shCO2VvZ8aEKSw2PE-',
+      'value': 1.0,
+      'currency': 'BRL',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+
+
+      
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
